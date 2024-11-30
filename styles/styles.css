@@ -1,0 +1,169 @@
+
+
+
+
+/*  VARIABLE ASSIGNMENT  */
+:root
+{
+    --hoverColor: rgb(223, 255, 237);
+
+    --fainterColor: white;
+    --faintColor: rgb(240, 240, 240);
+    --mainColor: lightgray;
+    --secondColor: rgb(173, 173, 173);
+    --thirdColor: rgb(119, 119, 119);
+}
+
+
+
+
+/*  ELEMENT STYLING  */
+html
+{
+    background-color: var(--faintColor);
+    height: 100%;
+}
+
+h2
+{
+    border-bottom: 1px solid var(--secondColor);
+    text-align: center;
+    width: 80%;
+}
+
+p
+{
+    margin: 5px;
+}
+
+
+
+
+
+
+/*  GLOBAL STYLING ELEMENTS */
+.flex
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+/*  MAIN CONTAINER STYLING */
+.main-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    column-gap: 50px;
+    row-gap: 5px;
+}
+
+.info-container
+{
+    width: 250px;
+    height: 100%;
+}
+
+.info-container, .game-container
+{
+    display: flex;
+    flex-direction: column;
+    
+    row-gap: 5px;
+}
+
+
+
+
+
+
+/*  MAIN GAME BOARD STYLING */
+#row-1, #row-2, #row-3
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+.cell
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--thirdColor);
+    border-radius: 5px;
+
+    background-color: var(--mainColor);
+
+    height: 120px;
+    width: 120px;
+}
+
+.cell:hover
+{
+    background-color: var(--hoverColor);
+}
+
+
+
+
+
+
+/*  GAME INFO STYLING  */
+.game-winner, #current-turn, #new-game-button
+{
+    background-color: var(--secondColor);
+    color: white;
+
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#new-game-button
+{
+    margin-top: 30px;
+    background-color: lightgreen;
+}
+
+#new-game-button:hover
+{
+    background-color: rgb(186, 255, 186);
+}
+
+.game-info, .winners-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--fainterColor);
+    border-radius: 5px;
+}
+
+.game-info
+{
+    height: 33%;
+}
+
+.winners-container
+{
+    height: 67%;
+}
+
+.game-winners
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

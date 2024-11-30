@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="flex" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body class="flex">
+    
+    <section class="main-container">
+        <div class="game-container">
+            <div id="row-1">
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+                <div class="cell" id="3"></div>
+            </div>
+            <div id="row-2">
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+                <div class="cell" id="6"></div>
+            </div>
+            <div id="row-3">
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+                <div class="cell" id="9"></div>
+            </div>
+        </div>
+        <div class="info-container">
+            <div class="game-info">
+                <h2>GAME INFO</h2>
+                <p id="current-turn">PLAYER ONE'S TURN</p>
+            </div>
+            <div class="winners-container">
+                <h2>WINNERS</h2>
+                <div id="game-winners">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="restart-container">
+        <p id="new-game-button">NEW GAME</p>
+    </div>
+
+    <script src="scripts\main.js"></script>
+</body>
+</html>
